@@ -1,0 +1,35 @@
+.explore{
+    margin-top: 40px;
+}
+
+.explore .exp-title h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.explore .exp-title p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.explore .exp-image{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+@media screen and (max-width:947px) {
+    .explore{
+        width: 100%;
+    }
+    .explore .exp-title{
+       margin-left: 100px;
+    }
+    .explore .exp-image{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}

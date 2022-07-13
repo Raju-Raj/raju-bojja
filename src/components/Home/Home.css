@@ -1,0 +1,158 @@
+.home{
+    background: url("../../Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 120vh;
+}
+
+.home .intro{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.home .intro h1{
+    font-size: 90px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.home .intro p{
+    font-weight: 900;
+    font-size: 22px;
+    color: #fff;
+}
+
+.home .form-box{
+    padding: 10px;
+    width:700px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.301);
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 70px;
+}
+
+.home .form-box form{
+    display: flex;
+    gap: 10px;
+}
+
+.home .form-box form .form-boxes{
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.home .form-box form .form-boxes input{
+    border: none;
+    outline: none;
+}
+
+.home .form-box form .form-boxes p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.home .form-box form button{
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(#ff8a00, #e52e71);
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.home .icon{
+    margin: 20px;
+}
+
+.home .icon i{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.home svg{
+    position: absolute;
+    top: 500px;
+}
+
+@media screen and (max-width:947px){
+    .home{
+        background-size:cover;
+        height: 100vh;
+        width: 100%;
+    }
+    .home svg{
+        display: none;
+    }
+    .home .intro{
+        margin-top: 120px;
+    }
+
+    .home .form-box{
+        max-width: auto;
+        height: 500px;
+        margin-top: 120px;
+        padding: 30px;
+    }
+
+    .home .form-box form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .home .form-box form .form-boxes{
+        height: 100px;
+    }
+    .home .form-box form .form-boxes input{
+        height:50px ;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .home .form-box form .form-boxes p{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .home .form-box form button{
+        height: 70px;
+        width: 100%;
+    }
+    .home .icon i{
+        margin-top: 30px;
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .home{
+        background-size:cover;
+    }
+    .home .intro{
+        width: 400px;
+        margin-top: 50px;
+    }
+    .home .intro h1{
+        font-size: 50px;
+    }
+    .home .intro p{
+        font-size: 15px;
+    }
+    .home .form-box{
+        margin-top: 50px;
+        width: 400px;
+    }
+    .home .icon i{
+        margin-top: 0px;
+        font-size: 40px;
+    }
+}

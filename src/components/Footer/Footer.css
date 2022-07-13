@@ -1,0 +1,71 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.footer .footerleft .logo {
+    margin-top: -15px;
+    border: none;
+    height: 55px;
+    width: 80px;
+    background-color: black;
+    color: whitesmoke; 
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 10px 10px 100px whitesmoke;
+    margin-bottom: 20px;
+}
+.footer .footerlef .logo span{
+    font-weight: 900;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer .listitems{
+    display: flex;
+    gap: 90px;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer .listitems li{
+    list-style-type: none;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.footer .listitems li:last-child{
+    border: 2px solid black;
+    width: 90px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: -10px;
+    transition: 0.5s ease;
+}
+
+.footer .listitems li:last-child:hover{
+    background: black;
+    color: whitesmoke;
+}
+
+@media screen and (max-width:947px) {
+    .footer{
+        width: 100%;
+        margin-top: 50px;
+        justify-content:center;
+        gap: 40px;
+    }
+    .footer .listitems{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
